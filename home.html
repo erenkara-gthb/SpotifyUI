@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Spotify | Official Page</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="spotify.json">
+</head>
+
+
+
+<body id="background">
+  <header>
+
+    <div class="menu_side">
+      <div class="navbar-container">
+
+
+
+        <img src="imgs/SpotifyHead.png" alt="">
+        <hr>
+        <div class="navbarlist">
+          <li class="navbarcomponents"><img class="navbaricons" src="imgs/homeIcon.png" alt=""> <a href="home.html"
+              class="navbarcomponents">Ana Sayfa</a></li>
+          <li class="navbarcomponents"><img class="navbaricons" src="imgs/searchIcon.png" alt=""> <a href="#search"
+              class="navbarcomponents">Ara</a></li>
+          <li class="navbarcomponents"><img class="navbaricons" src="imgs/libraryIcon.png" alt=""><a href="#library"
+              class="navbarcomponents">Kitaplık</a></li>
+          <li class="navbarcomponents"><img class="navbaricons" src="imgs/searchIcon.png" alt=""> <a href="#plaay"
+              class="navbarcomponents">Çal</a></li>
+        </div>
+        <br>
+        <br>
+        <h3 id="playlistheader">Playlist</h3>
+        <div class="search-container">
+
+
+          <input class="searchbox" id="searchbar" onkeyup="search_process()" type="text" name="search" placeholder="Search..." >
+          
+
+          <!-- onkeyup="search_process()" -->
+
+        </div>
+
+
+        <hr>
+        <div class="menu_playlist" id="list-holder">
+
+
+          <div id="myVerySpecialDiv">
+            <ul class="list-group" id="result">
+              
+            </ul>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+    </div>
+    </div>
+
+    <div class="player_side">
+      <div class="wave">
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+
+      </div>
+
+      <img src="imgs/MiniCover.png" alt="minicover">
+      <h5 id="musicname">One step Beyond
+        <div class="subtitle">Madness</div>
+      </h5>
+      <div class="likedisplay">
+        <img src="imgs/like.png" alt="like">
+        <img src="imgs/display.png" alt="display">
+        <img src="imgs/innerdisplay.png" alt="innerdisplay" id="innerdisplay">
+      </div>
+
+      <div class="grid-container">
+        <div></div>
+        <div class="play">
+          <img src="imgs/line.png" class="back" id="backline" alt="backline">
+          <img src="imgs/back.png" class="back" id="backbutton" alt="backbutton">
+          <img src="imgs/next.png" class="playbutton" id="playbutton" alt="playbutton">
+          <img src="imgs/circle.png" class="playbutton" id="playcircle" alt="playcircle">
+          <img src="imgs/next.png" class="next" id="nextbutton" alt="nextbutton">
+          <img src="imgs/line.png" class="next" id="nextline" alt="nextline">
+        </div>
+        <div></div>
+        <div>
+          <h5 class="timeshower1" id="timeshower1">00.15</h5>
+        </div>
+        <div><img src="imgs/timeshower.png" id="timeshower" alt="timeshower"></div>
+        <div>
+          <h5 class="timeshower1">04.15</h5>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="middle-part" data-spy="scroll" data-target=".navbar" data-offset="50">
+      <header class="main-view-header">
+        <div class="mainsearch">
+          <form class="searchbox-main" action="spotify.json">
+
+            <input class="searchbox-main" type="search" placeholder="Search...">
+
+
+
+        </div>
+
+        <div class="profile">
+          <img src="imgs/ProfilePic.png" id="profilePic" alt="">
+          <p>Arthur Guillermin Ha...</p>
+        </div>
+
+        <div class="TopNav">
+
+          <img src="imgs/back2.png" id="back2" alt="">
+          <img src="imgs/next2.png" id="next2" alt="">
+        </div>
+
+
+
+    </div>
+  </header>
+  <div class="list-part">
+    <section class="recently-playing">
+      <h1>Yakında Çalanlar</h1>
+      <div class="grid-container2">
+        <div class="cover1">
+          <img src="imgs/coverbg.png" alt="">
+          <h4>Arneo Tunes - Winter 2020</h4>
+          <h5>Çalma Listesi Açıklaması</h5>
+        </div>
+        <div class="cover2">
+          <img src="imgs/coverbg.png" alt="">
+          <h4>2019’un En İyileri</h4>
+          <h5>Çalma Listesi Açıklaması</h5>
+        </div>
+        <div class="cover3">
+          <img src="imgs/coverbg.png" alt="">
+          <h4>AdFab Open Space</h4>
+          <h5>Çalma Listesi Açıklaması</h5>
+        </div>
+        <div class="cover4">
+          <img src="imgs/coverbg.png" alt="">
+          <h4>4-2</h4>
+          <h5>Çalma Listesi Açıklaması</h5>
+        </div>
+
+      </div>
+
+    </section>
+    <section class="recommend-for-you">
+      <h1>Tavsiye Edilenler</h1>
+      <h3>Sevdiğin her şeyden biraz dinle.</h3>
+      <div class="grid-container3">
+        <div class="cover1-1">
+          <img src="imgs/coverbg.png" alt="">
+
+        </div>
+        <div class="cover2-1">
+          <img src="imgs/coverbg.png" alt="">
+
+        </div>
+        <div class="cover3-1">
+          <img src="imgs/coverbg.png" alt="">
+
+        </div>
+        <div class="cover4-1">
+          <img src="imgs/coverbg.png" alt="">
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+  </div>
+
+
+  <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/search.js"></script>
+
+
+  <script>
+    $(document).ready(function() {
+      load_list();
+    }
+    );
+    
+    // search_process();
+
+
+
+  </script>
+
+
+  </header>
+</body>
+
+
+
+
+
+
+</html>
